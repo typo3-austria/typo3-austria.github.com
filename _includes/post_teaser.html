@@ -1,0 +1,32 @@
+<div class="post-teaser">
+
+    <header>
+        {% if post_meta_prefix %}
+        <p class="meta">{{ post_meta_prefix }}</p>
+        {% endif %}
+
+        <h1>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                {% if post.layout == 'meetup' %}
+                TUGA &#35;{{ post.number }} ({{ post.city }})
+                {% else %}
+                {{ post.title }}
+                {% endif %}
+            </a>
+        </h1>
+
+        <p class="meta">{{ post.date | date: "%d.%m.%Y" }}</p>
+    </header>
+
+    <div class="excerpt">
+        {{ post.excerpt }}
+
+        <a class="button" href="{{ post.url | prepend: site.baseurl }}">{{ site.theme.str_continue_reading }}</a>
+        {% if post.layout == 'meetup' %}
+            {% if post.meetupid %}
+            <a href="http://www.meetup.com/TUGA-TYPO3-User-Group-Austria/events/{{ post.meetupid }}/" class="button">Anmelden auf meetup.com</a>
+            {% endif %}
+        {% endif %}
+    </div>
+
+</div>

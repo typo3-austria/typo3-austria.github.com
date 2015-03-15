@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title">TUGA &#35;{{ page.number }} ({{ page.city }})</h1>
+
+    <p class="meta">
+    {{ page.date | date: "%d.%m.%Y" }}
+    {% if page.author %} - {{ page.author }}{% endif %}
+    </p>
+  </header>
+
+  <section class="post-content">
+    {{ content }}
+  </section>
+{% if page.meetupid %}
+  <a href="http://www.meetup.com/TUGA-TYPO3-User-Group-Austria/events/{{ page.meetupid }}/" class="button">Anmelden auf meetup.com</a>
+{% endif %}
+<h3>Themen</h3>
+   {% if page.agenda %}
+        <ul>
+        {% for topic in page.agenda %}
+            <li>{{ topic }}</li>
+        {% endfor %}
+            <li><strong>Dein Thema</strong></li>
+        </ul>
+   {% else %}
+        <strong>Bisher gibt es leider keine Vorträge</strong>. Wenn du über ein Thema sprechen möchtest oder wenn du über ein
+        besonderes Thema hören möchtest schicke bitte ein Mail an <a href="mailto:redaktion@tuga.at">redaktion@tuga.at</a>.
+   {% endif %}
+  <h3>Sponsoren</h3>
+
+{% if page.sponsor %}
+  {{ page.sponsor }}
+  <strong>Vielen Dank!</strong>
+{% else %}
+  <strong>Bisher gibt es leider keine Sponsoren.</strong> Wenn du oder deine Firma dieses Treffen sponsorn wollen schicke bitte ein mail an <a href="mailto:redaktion@tuga.at">redaktion@tuga.at</a>
+{% endif %}
+<div>
+  <h3>Location</h3>
+  <p>{{ page.address }}</p>
+  {% render_map 300,300 %}
+</div>
+</article>
+
+<!-- Disqus -->
+{% if site.theme.disqus_shortname %}
+<div class="comments">
+  {% include disqus.html %}
+</div>
+{% endif %}
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-550608653659fdd6" async="async"></script>

@@ -1,58 +1,56 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+url: "http://www.tuga.at" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Type Theme
+  title: TUGA - TYPO3 Usergroup Austria
   avatar: avatar.png
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
-  
+
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-     
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+     Die österreichische TYPO3 User Group besteht aus Benutzern, Administratoren, Entwicklern und Internet-Agenturen, welche sich auf die Arbeit mit den Produkten von TYPO3 beschäftigen.
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-  
+
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: redaktion@tuga.at
   behance:
-  bitbucket: 
-  dribbble: 
-  facebook: 
-  flickr: 
-  github: "rohanchandra/type-theme"
-  google_plus: 
-  instagram: 
+  bitbucket:
+  dribbble:
+  facebook: "pages/TUGA-TYPO3-Usergroup-Austria/295199060565325"
+  flickr:
+  github: "typo3-austria"
+  google_plus:
+  instagram:
   linkedin:  # Full URL
-  pinterest: 
-  reddit: 
-  soundcloud: 
+  pinterest:
+  reddit:
+  soundcloud:
   stack_exchange:  # Full URL
-  steam: 
-  tumblr: 
-  twitter: "twitter"
-  wordpress: 
-  youtube: 
-  
+  steam:
+  tumblr:
+  twitter:
+  wordpress:
+  youtube:
+
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  katex: true # Enable if using math markup 
-  
+  disqus_shortname: typo3-austria
+  katex: true # Enable if using math markup
+
   # Localization strings
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
   str_email: "Email"
   str_next: "Next"
   str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-  
+  str_continue_reading: "Mehr Informationen"
+
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
@@ -66,3 +64,14 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
+
+mapping:
+  provider: google_static
+  zoom: 14
+
+defaults:
+  scope:
+    path: ""
+    type: meetup
+  values:
+    is_meetup: true
