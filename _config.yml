@@ -64,14 +64,3 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
-
-mapping:
-  provider: google_static
-  zoom: 14
-
-defaults:
-  scope:
-    path: ""
-    type: meetup
-  values:
-    is_meetup: true

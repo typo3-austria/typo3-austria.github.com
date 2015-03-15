@@ -41,7 +41,9 @@ layout: default
 <div>
   <h3>Location</h3>
   <p>{{ page.address }}</p>
-  {% render_map 300,300 %}
+    {% if page.mapping.latitude %}
+    <img src="http://maps.googleapis.com/maps/api/staticmap?markers={{page.mapping.latitude}},{{page.mapping.longitude}}&size=300x300&zoom=14&sensor=false" alt="" />
+    {% endif %}
 </div>
 </article>
 
