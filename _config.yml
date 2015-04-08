@@ -44,7 +44,7 @@ theme:
   katex: true # Enable if using math markup
 
   # Localization strings
-  str_follow_on: "Follow on"
+  str_follow_on: "Folge uns auf"
   str_rss_follow: "Follow RSS feed"
   str_email: "E-Mail"
   str_next: "Next"
