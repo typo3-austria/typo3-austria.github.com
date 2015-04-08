@@ -14,7 +14,7 @@ theme:
   header_text: >
      Die österreichische TYPO3 User Group besteht aus Benutzern, Administratoren, Entwicklern und Internet-Agenturen, welche sich auf die Arbeit mit den Produkten von TYPO3 beschäftigen.
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+   Powered by <small><a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a></small>
 
   # Icons
   rss: false
