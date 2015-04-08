@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Über die TUGA
+navtitle: Über uns
 permalink: /ueber/
 feature-img: "img/sample_feature_img_2.png"
 ---
