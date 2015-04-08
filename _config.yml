@@ -46,7 +46,7 @@ theme:
   # Localization strings
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
+  str_email: "E-Mail"
   str_next: "Next"
   str_prev: "Prev"
   str_continue_reading: "Mehr Informationen"
