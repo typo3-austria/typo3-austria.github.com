@@ -14,10 +14,16 @@ layout: default
 
   <section class="post-content">
     {{ content }}
+
+    {% if page.mapping.latitude %}
+      <h3>Location</h3>
+      <a href="http://maps.google.com/?daddr={{page.mapping.latitude}},{{page.mapping.longitude}}" target="_blank" title="In Google Maps öffnen">
+        <img src="http://maps.googleapis.com/maps/api/staticmap?markers={{page.mapping.latitude}},{{page.mapping.longitude}}&size=300x300&zoom=14&sensor=false" alt="" />
+      </a>
+    {% endif %}
   </section>
 
-  <h3>Location</h3>
-  <img src="http://maps.googleapis.com/maps/api/staticmap?markers={{page.mapping.latitude}},{{page.mapping.longitude}}&size=300x300&zoom=14&sensor=false" alt="" />
+
 
 </article>
 
